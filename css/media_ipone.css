@@ -363,7 +363,7 @@ background-size:400%;
 	background:url(../img/icons.png)no-repeat 0 -2.19rem;
 	transform: scale(3);
 	float:left;
-	margin-top:2.5rem;
+	margin-top:3.5rem;
 	margin-left:15%;
 }
 .swiper-button-next{
@@ -372,7 +372,7 @@ background-size:400%;
 	background:url(../img/icons.png)no-repeat -.25rem -2.19rem;
 	transform: scale(3);
 	float:right;
-	margin-top:2.5rem;
+	margin-top:3.5rem;
 	margin-right:15%;
 }
 
