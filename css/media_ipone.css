@@ -1,0 +1,570 @@
+/*媒体查询 iphone5 - iphone6 plus*/
+html,body{
+	font-size:100px;
+	font-family: "微软雅黑",Arial;
+}
+
+/*浮动列表*/
+.fixedList{
+	display:none;
+}
+
+/*轮播图图片*/
+.sectionOne .swiper-slide>div{width: 100%;height:100%;}
+.sectionOne .topImg_1{width:100%;background:url(../img/wp1_1.jpg)no-repeat;background-size:cover;background-position:50% top;}
+.sectionOne .topImg_2{background:url(../img/wp1_2.jpg)no-repeat;background-size:cover;background-position:50% top;}
+.sectionOne .topImg_3{background:url(../img/wp1_3.jpg)no-repeat;background-size:cover;background-position:50% top;}
+.sectionOne .topImg_4{background:url(../img/wp1_4.jpg)no-repeat;background-size:cover;background-position:50% top;}
+/*导航栏*/
+.nav{
+	display:none;
+}
+.navTwo{
+	display:block;
+	width: 100%;
+	height: 1.6rem;
+	transition:background .1s;
+	position:fixed;
+	top:0;
+	font-size:0px;
+	z-index: 10;
+}
+.navTwo .Logo{
+	width: 2.28rem;
+	height: .81rem;
+	background:url(../img/logo_mini.png)no-repeat;
+	background-size:100%;
+	position:absolute;
+	top:.5rem;
+	left:.5rem;
+}
+.navTwo .Phone{
+	width: 1rem;
+	height: 1rem;
+	background:url(../img/Phone.png)no-repeat;
+	background-size:100%;
+	position:absolute;
+	opacity:.5;
+	transition:opacity .5s;
+	top:.4rem;
+	right:2.3rem;
+}
+.navTwo .Phone:hover{
+	opacity:1;
+}
+.navTwo .Fun{
+	width: .7rem;
+	height: .7rem;
+	background:url(../img/Function.png)no-repeat;
+	background-size:100%;
+	position:absolute;
+	top:.5rem;
+	right:1.1rem;
+	opacity:.5;
+	transition:opacity .5s;
+	z-index: 1;
+}
+.navTwo .List{
+	width: 1.8rem;
+	height: 6.8rem;
+	background:#3A3A3A;
+	border:1px solid #000;
+	position:absolute;
+	right:-1.9rem;
+	top:.5rem;
+	padding-top:.7rem;
+	transition:right .1s;
+}
+.navTwo .List .li{
+	display:inline-block;
+	width: 1.8rem;
+	height: .8rem;
+	text-align:center;
+	line-height: .8rem;
+	color:#fff;
+	font-size:.36rem;
+}
+.navTwo .List .li:first-child{
+	margin-top:.2rem;
+}
+.navTwo .List .li:hover{
+	background:#111;
+	color:#00dfb9;
+}
+
+/*轮播图*/
+
+/*跑马灯*/
+.Marquee{
+	height:.5rem;
+	text-align:center;
+	bottom:4rem;
+}
+.Marquee i{
+	display:none;
+}
+.Marquee .More{
+	display:none;
+}
+.Marquee span.span{
+	width: 8rem;
+	height: .5rem;
+}
+.Marquee span.li{
+	width: 8rem;
+	height: .5rem;
+}
+.Marquee span a{
+	width: 8rem;
+	height: .5rem;
+	font-size:.36rem;
+	line-height: .5rem;
+}
+/*分页器*/
+.swiper-container-horizontal>.swiper-pagination-bullets{
+height: 4rem;
+}
+.my-bullet{
+	width: .8rem;
+	height: .1rem;
+	margin: 0 .1rem;
+}
+.mybullet2{
+	width: .8rem;
+	height: .1rem;
+	margin: 0 .1rem;
+}
+/*向下滚动按钮*/
+.toDownBtn{
+	bottom:2rem;
+}
+.toDownBtn span{
+	width: 1rem;
+	height: 1rem;
+	background-position:0px -120px;
+	background-size:200%;
+}
+.toDownBtn span:hover{
+	background-position-Y:-2.25rem;
+}
+/* 字体*/
+.swiper-slide .topImg_1 .left{
+display:inline-block;
+width: 2.4rem;
+height: 4.39rem;
+background-position:top right;
+background-size:400%;
+}
+.swiper-slide .topImg_1 .right{
+	width: 6rem;
+	height: 4.39rem;
+	line-height: .8rem;
+}
+.swiper-slide .topImg_1 .right b{
+	width: 5.39rem;
+	height:1.06rem;
+	background-position: top left;
+	background-size: 140%;
+}
+.FontStyle{
+	font-size:.7rem;
+	font-weight:bold;
+}
+.swiper-slide .topImg_1 .right p{
+	color:#fff;
+	font-size:.36rem;
+	line-height: .6rem;
+}
+.swiper-slide .word{
+	width: 100%;
+	height:.5rem;
+	text-align:center;
+	margin-top:4.5rem;
+}
+/*轮播二*/	
+ .topImg_2 .word{
+ 	position:absolute;
+	width: 100%;
+	height:5rem;
+	text-align:center;
+	top:.8rem;
+}
+ .topImg span.wordImg{
+ 	width: 6rem;
+ 	height: 1.6rem;
+ 	background-size:180%;
+ 	background-position:0 -1.5rem;
+	margin-top:.6rem;
+}/*公共样式*/
+.colorccc{
+	color:#fff;
+	font-size:.36rem;
+	line-height: .6rem;
+}/*公共字体样式*/
+/*轮播三*/
+.topImg_3 .word{
+	margin-top:5.2rem;
+}
+.topImg_4 .word{
+	margin-top:5.2rem;
+}
+.section .title{
+	height: .8rem;
+	font-size:.7rem;
+	/*font-weight: bold;*/
+	margin-top:2.2rem;
+}
+/*fullpage 页面二*/
+.sectionTwo .main{
+	width: 5rem;
+	text-align:center;
+}
+.sectionTwo .main .I{
+	display:none;
+}
+.sectionTwo .main .word{
+	display:none;
+}
+.sectionTwo .main p{
+	display:none;
+}
+.sectionTwo .main dd{
+	width: 5rem;
+	height: 1.6rem;
+	margin-top:.8rem;
+	background-size:100%;
+}
+.sectionTwo .main .circle{
+	width: 2rem;
+	height: 1rem;
+	float:left;
+}
+.sectionTwo .main .circle .img{
+	margin-top:.5rem;
+	margin-left:.5rem;
+	transform:scale(2);
+}
+.sectionTwo .main dd span{
+	font-size:.4rem;
+	line-height: .8rem;
+}
+.sectionTwo .main dd span{
+	float:left;
+	margin-left:0rem;
+}
+/*fullpage 页面三*/
+.sectionThr .main{
+	display:none;
+}
+.sectionThr .main2{
+	display:block;
+	width:70%;
+	height:8rem;
+	margin:.30rem auto;
+	overflow:hidden;
+}
+.sectionThr .main2 dd{
+	height:6.2rem;
+	width: 100%;
+	float:left;
+	margin-right:.20rem;
+	overflow:hidden;
+	position:relative;
+	z-index: 0;
+	background:rgba(255,255,255,0.7);
+}
+.sectionThr .main2 dd .up{
+	width:100%;
+	cursor:pointer;
+	position:absolute;
+	top:0;
+	z-index: 1;
+}
+.sectionThr .main2 dd .up img{
+	width: 100%;
+}
+.sectionThr .main2 dd .dn{
+	width:100%;
+	margin-top:0rem;
+	font-size:0rem;
+	text-align:left;
+	position:absolute;
+	bottom:0;
+	z-index: 1;
+}
+.sectionThr .main2 dd  .bg1{
+	width: 100%;
+	height: 4.05rem;
+	position:absolute;
+	top:-4.05rem;
+	background:rgba(0,0,0,0.6);
+	z-index: 0;
+	text-align:center;
+	line-height: 4.00rem;
+	transition:top 0.2s;
+}
+.sectionThr .main2 dd  .bg1 span{
+	display:inline-block;
+	width: 1rem;
+	height: 1rem;
+	color:#fff;
+	font-size:.40rem;
+	background: rgba(46,208,180,0.7);
+	border-radius: 50%;
+	text-align: center;
+	line-height: 1rem;
+}
+
+.sectionThr .main2 dd  .bg2{
+	width: 100%;
+	height:3rem;
+	position:absolute;
+	bottom:-2.9rem;
+	background: #2ED0B4;
+	z-index: 0;
+	transition:bottom 0.2s;
+}
+.sectionThr .main2 dd .dn p{
+	display:inline-block;
+	font-size:.3rem;
+	color:#999;
+	line-height: .60rem;
+	margin-left:.15rem;
+}
+.sectionThr .main2 dd .dn strong{
+	/*display:inline-block;*/
+	font-size:.36rem;
+	color:#222;
+}
+.sectionThr .main2 dd .dn i{
+	display: inline-block;
+	position:absolute;
+	width:100%;
+	height: 1.20rem;
+	z-index: 1;
+	left:0;
+	bottom:0;
+}
+.sectionThr  .main2 dd:hover .bg1{top:0rem; }
+.sectionThr  .main2 dd:hover .bg2{bottom:0rem; }
+.sectionThr  .main2 dd:hover .dn p{color:#fff; }
+.sectionThr  .main2 dd:hover .dn strong{color:#fff; }
+.sectionThr .more{
+	width: 1.6rem;
+	height: .6rem;
+	font-size:.44rem;
+	position:relative;
+	bottom:1.8rem;
+}
+
+.swiper-button-prev{
+	width: .16rem;
+	height: .3rem;
+	background:url(../img/icons.png)no-repeat 0 -2.19rem;
+	transform: scale(3);
+	float:left;
+	margin-top:2.5rem;
+	margin-left:15%;
+}
+.swiper-button-next{
+	width: .16rem;
+	height: .3rem;
+	background:url(../img/icons.png)no-repeat -.25rem -2.19rem;
+	transform: scale(3);
+	float:right;
+	margin-top:2.5rem;
+	margin-right:15%;
+}
+
+/*fullpage 页面四*/
+.sectionFour .head{
+	display:none;
+}
+.sectionFour .ul1{
+	display:none;
+}
+.sectionFour .title{
+	margin-top:4rem;
+}
+.sectionFour .ul2{
+	display:block;
+	height:7rem;
+	margin-top:2rem;
+	overflow:hidden;
+	text-align:center;
+}
+.sectionFour .ul2 li{
+	font-size:.5rem;
+	width: 6rem;
+	height: 1rem;
+	margin-left:2.5rem;
+	text-align:left;
+	color:#36E6C8;
+	list-style:disc;
+}
+.sectionFour .ul2 li span{
+	font-size:.4rem;
+	color:#111;
+}
+
+/*页面五*/
+.sectionFir .main1{
+	display:none;
+}
+.BtnParent{
+	display:none;
+}
+.sectionFir .main2{
+	display:block;
+	text-align:center;
+	font-size:0px;
+}
+.sectionFir .headFir{
+	margin-top:3rem;
+	width: 7.5rem;
+	height: 1.2rem;
+	background-size:190%;
+	background-position:.01rem -16.3rem;
+}
+.sectionFir .title{
+	margin-top:.5rem;
+}
+.sectionFir .main2 ul{
+ 	display:inline-block;
+ 	position:absolute;
+ 	width:90%;
+ 	height: 7rem;
+ 	margin:0 .50rem;
+ 	left:0;
+ 	top:10rem;
+ 	transform:scale(3);
+}
+
+
+/*页面六*/
+.sectionSix .outCir .I{
+	display:none;
+}
+.sectionSix .main{
+	width: 4rem;
+	height:75%;
+	margin:0 auto;
+}
+.sectionSix .main li{
+	width: 2rem;
+	height: .6rem;
+	margin-top:1.5rem;
+	transform:scale(2.5);
+}
+.sectionSix .main li .img{
+	vertical-align: top;
+}
+.sectionSix .main p{
+	display: inline-block;
+	line-height: .6rem;
+	font-size:0px;
+}
+.sectionSix .main p strong{
+	font-size:.18rem;
+
+}
+
+.sectionSix .outCir{
+	float:left;
+}
+.sectionSix .outCir .I{
+	display:none;
+}
+/*页面七*/
+.sectionSev .bottom{
+	display:none;
+}
+.sectionSev .liB{
+	display:none;
+}
+.sectionSev ul.opction{
+	width: 4.8rem;
+	height: .86rem;
+	left:2.5rem;
+}
+.sectionSev ul.opction li{
+	float:left;
+	width: 1.6rem;
+	font-size:.4rem;
+	line-height: 1rem;
+	/*display:inline-block;*/
+}
+.sectionSev .liB2{
+	width: 1.6rem;
+	height: .86rem;
+	background: #164B46;
+	position:absolute;
+	top: 0;
+	left: 0;
+	transition:top 0.3s;
+	z-index: 0;
+}
+.sectionSec{
+	width: 100%;
+	text-align:center;
+}
+.sectionSec .main1{
+	width: 100%;
+	text-align:center;
+}
+.sectionSev .Lun{
+	top: 8rem;
+	left:3.5rem;
+	width: 3rem;
+	height:4rem;
+	padding:0 .3rem;
+	transform:scale(3);
+}
+.sectionSev .Lun .swiper-slide p{
+	width: 3rem;
+	word-wrap: break-word;
+	margin: 0;
+}
+.sectionSev .Lun .swiper-slide ul li{
+	width: 3rem;
+	word-wrap: break-word;
+	margin: 0;
+}
+.sectionSev .Lun .swiper-slide .ul{
+	display:inline-block;
+	width: 100%;
+	height: .4rem;
+	height: .4rem;
+	font-size:.18rem;
+	vertical-align: top;
+}
+
+
+/*页面八*/
+.sectionEig .bottom{
+	display:none;
+}
+.sectionEig .main{
+	width: 100%;
+	text-align:center;
+}
+.sectionEig .main img{
+	position:absolute;
+	width: 50%;
+	bottom:3rem;
+	left:25%;
+}
+.sectionEig .main span .img{
+	width: 8rem;
+	height:1rem;
+	background-size:160%;
+	background-position:0 -22.5rem;
+	margin-top:1.5rem;
+}
+.sectionEig .main span p{
+	font-size:.4rem;
+	line-height: .8rem;
+}
+.sectionEig .main span:last-child p{
+	display:none;
+}
