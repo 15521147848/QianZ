@@ -91,6 +91,11 @@ $(png).mouseover(function(){
 	var right = parseInt($(pngMod).eq(Index).css("width"));
 	$(this).css("opacity",".4")
 	$(pngMod).eq(Index).css("right","50px");
+	
+})
+$(png).mouseout(function(){
+	var Index = $(this).index()-1;
+	var right = parseInt($(pngMod).eq(Index).css("width"));
 	$(pngMod).eq(Index).mouseover(function(){
 	$(this).css("right",'50px');
 	$(png).eq(Index).css("opacity",".4")
@@ -99,17 +104,13 @@ $(png).mouseover(function(){
 	$(pngMod).eq(Index).css("right",-(right+50)+'px');
 	$(png).eq(Index).css("opacity",".8")
 	})
-})
-$(png).mouseout(function(){
-	var Index = $(this).index()-1;
-	var right = parseInt($(pngMod).eq(Index).css("width"));
-	// alert(right);
 	$(pngMod).eq(Index).css("right",-(right+50)+'px');
-	$(png).eq(Index).css("opacity",".8")
+	$(png).eq(Index).css("opacity",".8");
 })
 }
-var btnX=0;
-$('.fixedList .btn').click(function(){
+(function(){
+	var btnX=0;
+	$('.fixedList .btn').click(function(){
 	btnX++;
 	if(btnX%2==0){
 		console.log(btnX);
@@ -117,13 +118,12 @@ $('.fixedList .btn').click(function(){
 	$('.fixedList .list').css({
 		'right':'0px',
 		'opacity':'0.8'
-
 	})
 	if(btnX==10){
 		btnX=0;
 	}
 	}else{
-		console.log(btnX);
+	console.log(btnX);
 	$(this).css({"background-positionX":"-32px"})
 	$('.fixedList .list').css({
 		'right':'-100px',
@@ -131,6 +131,7 @@ $('.fixedList .btn').click(function(){
 	});
 }
 })
+})()
 fixedMouse(".png",".pngMod");
 $('.pngFree').click(function(){$.fn.fullpage.moveSectionDown();})
 $('.pngOne').click(function(){$.fn.fullpage.moveSectionUp();})
@@ -152,8 +153,7 @@ $('.pngOne').click(function(){$.fn.fullpage.moveSectionUp();})
 //鼠标滑动换图
 function mouseImg(imgIndex,i){
 	
-	$(imgIndex).mouseover(function(){
-	var Index = $(this).index();
+	$(imgIndex).mousemove(function(){
 	var Left = parseInt($(this).offset().left);
 	var Top = parseInt($(this).offset().top);
 	$(i).css({
@@ -161,12 +161,13 @@ function mouseImg(imgIndex,i){
 		top:(Top)+'px'
 	})
 	$(this).css({
-		"background-positionY":"-150px"
+		"background-positionY":"-150px",
 	})
 	})
 	$(imgIndex).mouseout(function(){
-		$(imgIndex).css({
-		"background-positionY":"0px"
+	var Index = $(this).index();
+	$(this).css({
+		"background-positionY":"0px",
 	})
 	})
 
