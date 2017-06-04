@@ -10,9 +10,56 @@
 	<link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/media_ipone.css" media="screen and (min-device-width:320px) and (max-device-width:760px)">
     <link rel="stylesheet" href="css/media_ipad.css" media="screen and (min-device-width:761px) and (max-device-width:1024px)">
+    <link rel="stylesheet" href="css/media_ipone.css" media="screen and (min-width:320px) and (max-width:760px)">
+    <link rel="stylesheet" href="css/media_ipad.css" media="screen and (min-width:761px) and (max-width:1024px)">
     
 </head>
+<style>
+    #wraper{
+        width:100%;
+        height:100%;
+        background:url("./img/welcome.jpg");
+        background-size:100% 100%;
+        position:fixed;
+        z-index: 100;
+        top:0;
+        left:0;
+    }
+    #hello{
+        width:500px;
+        height:200px;
+        background: url("./img/welcome_words.png")no-repeat;
+        position:absolute;
+        top:50%;
+        margin-top: -100px;
+        left:50%;
+        margin-left:-250px;
+    }
+    #hello .gif{
+        width:20px;
+        height:20px;
+        background:url("./img/loading.gif")no-repeat;
+        position:absolute;
+        bottom:0;
+        left:50%;
+        margin-left:-10px;
+    }
+</style>
+<script>
+  
+        setTimeout(function(){
+            $("#wraper").css("display","none");
+        },3000)
+
+</script>
 <body>
+<!-- 预加载动画 -->
+<div id="wraper">
+<div id="hello">
+    <div class="gif"></div>
+</div>
+</div>
+<!-- 预加载动画end -->
 <!-- 浮动列表 -->
 <div class="fixedList">
     <div class="list">
@@ -34,7 +81,7 @@
             <span>我要做网站</span>
             <span>小助啊，抓紧给我来个电话！</span>
             <div class="input phNum">
-            <input class="" type="text">
+            <!-- <input class="" type="text"> -->
             </div>
             <input class="input phBtn" type="button" value="回拨">
         </div>

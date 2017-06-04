@@ -153,7 +153,7 @@ $('.pngOne').click(function(){$.fn.fullpage.moveSectionUp();})
 //鼠标滑动换图
 function mouseImg(imgIndex,i){
 	
-	$(imgIndex).mousemove(function(){
+	$(imgIndex).mouseover(function(){
 	var Left = parseInt($(this).offset().left);
 	var Top = parseInt($(this).offset().top);
 	$(i).css({
@@ -162,18 +162,20 @@ function mouseImg(imgIndex,i){
 	})
 	$(this).css({
 		"background-positionY":"-150px",
-	})
+	}).siblings(imgIndex).css({"background-positionY":"0px"})
 	})
 	$(imgIndex).mouseout(function(){
 	var Index = $(this).index();
-	$(this).css({
+	$(i).mouseout(function(){
+	$(imgIndex).eq(Index).css({
 		"background-positionY":"0px",
 	})
 	})
 
+	})
+
 }
 mouseImg(".sectionFour ul li",".sectionFour ul .bg");
-
 
 
 

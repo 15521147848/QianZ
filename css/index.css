@@ -31,7 +31,12 @@ html,body{
 	display: inline-block;
 	width: 26px;
 	height: 26px;
-	margin-top:15px;
+	margin-top:0px;
+	position:absolute;
+	top:270px;
+	left:50%;
+	margin-left: -13px;
+
 	background:url(../img/icons.png)no-repeat 0 -6.40rem;	
 }
 /*隐藏的模块*/
@@ -150,7 +155,7 @@ html,body{
 	height:100%;
 	text-align:center;
 	overflow:hidden;
-	background-size:120% 100%;
+	background-size:100% 100%;
 }
 .sectionTwo{background:url(../img/wp2.jpg)no-repeat;background-position:50% bottom;}
 .sectionThr{background:url(../img/wp3.jpg)no-repeat;background-position:50% 100%;}
@@ -369,15 +374,16 @@ text-align:center;
 /*页面二*/
 .sectionTwo{
 	text-align:center;
+	font-size:0px;
 } 
 .section .title{
 	display:inline-block;
 	width:auto;
 	height:.40rem;
-	font-size:.24rem;
+	font-size:24px;
 	letter-spacing:.03rem;
 	color:#111;
-	margin:0px auto;
+	margin:30px auto;
 }
 .sectionTwo .word{
 	display:block;
@@ -385,7 +391,7 @@ text-align:center;
 	height: .21rem;
 	background:url(../img/words.png)no-repeat 0 -3.33rem;
 	position:absolute;
-	top:3.00rem;
+	top:3.10rem;
 	left:36%;
 	z-index: 0;
 }
@@ -430,7 +436,6 @@ text-align:center;
 .sectionTwo .main dd:hover p{
 	margin-top:.20rem;
 }
-.sectionTwo .main dd:hover span{co}
 .sectionTwo .main .circle{
 	display: inline-block;
 	width:1.56rem;
@@ -498,11 +503,13 @@ text-align:center;
 }
 .sectionThr{
 	text-align:center;
+	font-size:0px;
+
 }
 .sectionThr .main{
 	width:10.80rem;
 	height:3.20rem;
-	margin:.30rem auto;
+	margin:0rem auto;
 	overflow:hidden;
 }
 .sectionThr .main dd{
@@ -595,11 +602,15 @@ text-align:center;
 	display:inline-block;
 	width:.80rem;
 	height:.30rem;
-	padding:.05rem .10rem;
-	margin-top:.30rem;
+	/*padding:.05rem .10rem;*/
+	margin-top:0rem;
 	font-size:.22rem;
 	color:#2FD0B5;
 	border:.01rem dotted #2FD0B5;
+	position: absolute;
+	bottom:20px;
+	left:50%;
+	margin-left:-.4rem;
 	cursor:pointer;
 }
 .sectionThr .more:hover{color:#fff;background:#2fd0b5;border:1px solid #2fd0b5;}
@@ -610,6 +621,8 @@ text-align:center;
 /*页面四*/
 .sectionFour{
 	text-align:center;
+	font-size:0px;
+
 }
 .section .head{
 	display:block;
@@ -622,7 +635,6 @@ text-align:center;
 .sectionFour .title{
 	display:inline-block;
 	padding: 0;
-	margin: 0;
 }
 .sectionFour .ul2{
 	display:none;
@@ -792,6 +804,10 @@ text-align:center;
 	border-radius:.05rem;
 	outline-style:none;
 	background:none;
+	position:absolute;
+	bottom:50px;
+	left:50%;
+	margin-left:-1.5rem;
 	transition:background 0.7s;
 }
 .section .firBtn:hover{
@@ -804,6 +820,8 @@ text-align:center;
 /*页面六*/
 .sectionSix{
 	text-align:center;
+	font-size:0px;
+
 }
 /*.sectionSix .title{
 	margin-top:75px;
